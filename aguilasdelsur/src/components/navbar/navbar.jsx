@@ -26,7 +26,7 @@ function Navbar () {
                                 <a className="nav-link dropdown-toggle active" href="galeria" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Galería
                                 </a>
-                                <ul className="dropdown-menu shadow-lg p-3 mb-5 dropdown-menu-dark bg-black rounded" aria-labelledby="navbarDropdown">
+                                <ul className="dropdown-menu shadow-lg p-3 mb-3 dropdown-menu-dark bg-dark rounded" aria-labelledby="navbarDropdown">
                                     <li><a className="dropdown-item" href="/galery">Fotos</a></li>
                                     <li><a className="dropdown-item" href="/galery">Videos</a></li>
                                 </ul>
