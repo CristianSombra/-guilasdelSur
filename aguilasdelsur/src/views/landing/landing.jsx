@@ -17,16 +17,16 @@ const Landing = () => {
 
     return (
         <div className="container-fluid container-fluid-landing">
-        <div className="container-intro d-flex align-items-center justify-content-center" style={{ minHeight: '100vh' }}>
-            <div className="row">
-                <div className="col-12 col-md-10">
-                    <img src={logo} className="img-fluid mb-3" alt="fondo" />
-                <div className="col text-center">    
-                    <Link to="/home" className="my-5 btn-1">
-                        <button className="btn btn-outline-light btn-lg">Ingresar</button>
-                    </Link>
+            <div className="container-intro " style={{ minHeight: '100vh' }}>
+                <div className="row d-flex align-items-center justify-content-center">
+                    <div className="col-12 text-center">
+                        <img src={logo} className="img-fluid mt-5" alt="fondo" />
                     </div>
-                </div>
+                    <div className="col-12 text-center">    
+                        <Link to="/home" className="my-3 fire-text">
+                            <h1>Ingresar</h1>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

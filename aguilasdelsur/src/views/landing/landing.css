@@ -8,6 +8,17 @@
     animation: blur 1s;
 }
 
+.fire-text{
+    text-decoration: none;
+}
+
+.fire-text h1 {
+    font-size: 3em;
+    animation: flame 1s infinite alternate;
+    color: #ff5722; /* Puedes ajustar el color base aquí */
+    text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+}
+
     
 /* Animación */
 
@@ -31,3 +42,18 @@
     }
 }
 
+/* Estilos de animación de fuego */
+@keyframes flame {
+    0% {
+      color: #ff5722; /* Color inicial - rojo */
+      text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+    }
+    50% {
+      color: #ff9900; /* Color intermedio - naranja */
+      text-shadow: 0 0 5px #ff9900, 0 0 10px #ff9900, 0 0 15px #ff9900; /* Sombra */
+    }
+    100% {
+      color: #ff5722; /* Color final - rojo */
+      text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+    }
+}
