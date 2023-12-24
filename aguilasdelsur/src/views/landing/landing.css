@@ -12,11 +12,16 @@
     text-decoration: none;
 }
 
-.fire-text h1 {
-    font-size: 3em;
+.fire-text h3 {
+    font-size: 1.5em;
     animation: flame 1s infinite alternate;
     color: #ff5722; /* Puedes ajustar el color base aquí */
     text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+}
+
+.icon-landing {
+    font-size: 3em;
+    color: aliceblue;
 }
 
     
