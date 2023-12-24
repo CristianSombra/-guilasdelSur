@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { faMotorcycle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from "../../assets/logoas.png"
+import "./navbar.css"
 
 function Navbar () {
     return (
@@ -11,7 +12,7 @@ function Navbar () {
                     <div className="navbar-brand">
                         <img src={logo} alt="logo" width="160"/>
                     </div>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style={{ fontSize: '2em' }}>
+                    <button className="navbar-toggler icon-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style={{ fontSize: '2em' }}>
                         <FontAwesomeIcon icon={faMotorcycle} />
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
