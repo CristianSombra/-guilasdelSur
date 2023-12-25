@@ -15,6 +15,11 @@ h1 {
     font-size: 2.2em;
 }
 
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
@@ -24,8 +29,6 @@ p {
 .background-container {
     margin: 0;
     padding: 0;
-    background-color: transparent;
-    background-image: url('./assets/bg1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
