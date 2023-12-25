@@ -7,8 +7,8 @@ import whats from "../../assets/whatsapp.png";
 function Footer() {
     return (
         <div>
-            <footer className="text-white py-4 bg-black rounded">
-                <div className="container">
+            <footer className="text-white py-4 bg-black">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col">
                             <div className="row ">

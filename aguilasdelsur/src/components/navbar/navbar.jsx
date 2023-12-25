@@ -7,7 +7,7 @@ import "./navbar.css"
 
 function Navbar () {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-black rounded py-0">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-black py-0">
             <div className="container-fluid">
                     <div className="navbar-brand">
                         <img src={logo} alt="logo" width="160"/>

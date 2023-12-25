@@ -18,7 +18,7 @@ function App() {
   },[location]);
   
   return (
-    <div className="container-fluid background-container text-white">
+    <div className="container-fluid background-container">
       {location.pathname !== "/" && <NavBar />}
       <div>
         <Routes>
