@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../components/footer/footer";
+import ScrollTop from "../../components/scrollTop/scrollTop"
 
 function Contact () {
     return (
@@ -81,7 +81,7 @@ function Contact () {
                     </div>
                 </div>
             </div>    
-            <Footer/> 
+        <ScrollTop/>
         </div>
     )
 };

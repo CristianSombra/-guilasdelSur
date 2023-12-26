@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../components/footer/footer";
+import ScrollTop from "../../components/scrollTop/scrollTop";
 import "../index.css";
 
 
@@ -87,8 +87,8 @@ function Home () {
                         </div>
                     </div>
                 </div>
-            </div>    
-            <Footer/> 
+            </div>
+            <ScrollTop/> 
         </div>
     )
 };

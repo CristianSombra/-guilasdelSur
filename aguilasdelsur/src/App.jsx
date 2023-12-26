@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Landing, Home, About, Galery, Contact } from "./views/index";
 import NavBar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 import "./App.css";
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/contact"  element={<Contact />} />
         </Routes>
       </div>
+      <Footer/>
     </div>
   );
 }
