@@ -1,5 +1,6 @@
 import React from "react";
-import Footer from "../../components/footer/footer";
+import ScrollTop from "../../components/scrollTop/scrollTop";
+
 
 function Galery () {
     return (
@@ -81,7 +82,7 @@ function Galery () {
                     </div>
                 </div>
             </div>
-            <Footer/>    
+            <ScrollTop/>   
         </div>
     )
 };
