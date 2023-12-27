@@ -1,23 +1,26 @@
+.navbar-custom {
+  transition: 0.2s ease all;
+}
+
 .icon-custom {
     font-size: 3em;
     animation: flame 1s infinite alternate;
-    color: #ff5722; /* Puedes ajustar el color base aquí */
+    color: #ff5722;
     border-color: #ff5722;
-    text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+    text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722;
 }
 
-/* Estilos de animación de fuego */
 @keyframes flame {
     0% {
-      color: #ff5722; /* Color inicial - rojo */
-      text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+      color: #ff5722;
+      text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; 
     }
     50% {
-      color: #ff9900; /* Color intermedio - naranja */
-      text-shadow: 0 0 5px #ff9900, 0 0 10px #ff9900, 0 0 15px #ff9900; /* Sombra */
+      color: #ff9900;
+      text-shadow: 0 0 5px #ff9900, 0 0 10px #ff9900, 0 0 15px #ff9900;
     }
     100% {
-      color: #ff5722; /* Color final - rojo */
-      text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+      color: #ff5722;
+      text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; 
     }
 }

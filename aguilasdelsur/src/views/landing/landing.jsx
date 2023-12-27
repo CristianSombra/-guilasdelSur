@@ -20,13 +20,13 @@ return (
             <div>
                 <img src={logo} className="img-fluid mt-3 img-landing" alt="fondo" />
             </div>
-            <div className="fire-text">
                 <h2>Agrupación Motera</h2>
+            <div className="fire-text">
                 <h3>Águilas del Sur</h3>
             </div>
             <div>
                 <Link to="/home" className="my-3 icon-landing">
-                    <i className="bi bi-box-arrow-in-right"></i>
+                    <button className="btn btn-outline-light">Ingresar</button>
                 </Link>
             </div>
         </div>

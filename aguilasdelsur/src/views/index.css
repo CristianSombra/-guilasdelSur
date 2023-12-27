@@ -1,8 +1,21 @@
+.seccion-oscura {
+  padding: 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.898);
+}
+
+
 .fire-text h1 {
     font-size: 3em;
     animation: flame 1s infinite alternate;
     color: #ff5722; /* Puedes ajustar el color base aquí */
     text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+}
+
+.fire-text {
+  animation: flame 1s infinite alternate;
+  color: #ff5722; /* Puedes ajustar el color base aquí */
+  text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
 }
 
 
