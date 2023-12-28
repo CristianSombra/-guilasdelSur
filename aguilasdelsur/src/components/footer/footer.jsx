@@ -16,13 +16,13 @@ function Footer() {
                                     <p>¡Gracias por visitar nuestro sitio! Conéctate con nosotros en las redes sociales:</p>
                                 </div>
                                 <div className="col-12 d-flex justify-content-center text-center">
-                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                         <img className="me-5" src={face} width="40"/>
                                     </a>
                                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                         <img className="me-5" src={insta} width="40"/>
                                     </a>
-                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                         <img src={whats} width="40"/>
                                     </a>
                                 </div>

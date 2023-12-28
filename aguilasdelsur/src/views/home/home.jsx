@@ -12,7 +12,7 @@ function Home () {
     return (
         <div className="container-fluid">
                 <div className="row mt-5 d-flex justify-content-center">
-                    <div className="col-12 col-md-6 text-center">    
+                    <div className="col-12 col-md-6 text-center mt-3">    
                         <img src={img} className="img-fluid"/>
                     </div>
                 </div>
@@ -21,7 +21,7 @@ function Home () {
                 <div className="col-12 text-center">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-12 col-md-6">
-                            <p>Agrupación creada y compuesta por moteros amigos que comparten la misma pasión por las 2 ruedas, y los mismos intereses como el honor, el valor y la camadería. Integrada por 35 miembros desde la provincia de Tierra del Fuego hasta la provincia de Chubut, Argentina.</p>
+                            <p>Sitio oficial de la Agrupación Motera Águilas del Sur. En nuestro sitio podrás conocer nuestra historia, estar informado de próximos eventos ya sean propios o de otras organizaciones en las que participamos, y disfrutar de nuestras aventuras.</p>
                         </div>
                     </div>
 
@@ -36,14 +36,14 @@ function Home () {
                                 </figcaption>
                             </div>
                             <div className="col-12  col-md-6 mb-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit labore quis a in. Tenetur, illo adipisci alias sapiente facere quo illum ab nihil reiciendis rem ducimus impedit nobis voluptates.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi quisquam laudantium voluptatibus culpa error corporis, labore nesciunt ducimus eius, vero numquam molestiae veniam magni enim assumenda fugiat voluptatum deleniti quia.</p>
+                                <p>En la ruta, encontramos la verdadera riqueza de la vida, la libertad. Con nuestras motos como compañeras, exploramos caminos desconocidos y creando recuerdos inolvidables.</p>
+                                <p>Cada kilómetro recorrido es una página más en el libro de nuestras vidas, y en cada curva descubrimos la belleza de vivir en la carretera, donde la libertad se fusiona con el viento.</p>
                             </div>
                         </div>
                     <div className="row my-5 seccion-oscura">
                         <div className="col-12 text-center">
                             <h1>Galería</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima perspiciatis quibusdam in adipisci natus magnam? Obcaecati laborum veritatis soluta repudiandae voluptatem maiores, expedita enim voluptatibus doloribus. Ipsa pariatur hic tempora!</p>
+                            <p>Visita nuestra galería en el que podrás disfrutar de nuestras reuniones y aventuras.</p>
                         </div>
                             <div className="col-12 col-md-6 my-3">
                                 <Carrouselhome/>
@@ -68,8 +68,8 @@ function Home () {
                     <hr />
                     <div className="row my-5 justify-content-evenly">
                     <div className="col-12 text-center">
-                            <h1>Aquí van las publicidades</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima perspiciatis quibusdam in adipisci natus magnam? Obcaecati laborum veritatis soluta repudiandae voluptatem maiores, expedita enim voluptatibus doloribus. Ipsa pariatur hic tempora!</p>
+                            <h1>Sección Informativa</h1>
+                            <p>En éste apartado podrás estar actualizado de los próximos eventos para que puedas participar.</p>
                         </div>
                         <div className="col-12 col-md-6">
                             <Carrouselhome2/>

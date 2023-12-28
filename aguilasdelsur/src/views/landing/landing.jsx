@@ -20,7 +20,9 @@ return (
             <div>
                 <img src={logo} className="img-fluid mt-3 img-landing" alt="fondo" />
             </div>
+            <div className="landing">
                 <h2>Agrupación Motera</h2>
+            </div>
             <div className="fire-text">
                 <h3>Águilas del Sur</h3>
             </div>
