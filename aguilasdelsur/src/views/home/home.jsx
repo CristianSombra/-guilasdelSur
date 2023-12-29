@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import YouTube from 'react-youtube';
 import img from "../../assets/home.png";
 import imgmoto from "../../assets/motoush.png";
 import ScrollTop from "../../components/scrollTop/scrollTop";
@@ -9,6 +10,10 @@ import "../index.css";
 
 
 function Home () {
+    
+
+    const videoId = "KaM62oqXgJU";
+
     return (
         <div className="container-fluid">
                 <div className="row mt-5 d-flex justify-content-center">
@@ -21,7 +26,7 @@ function Home () {
                 <div className="col-12 text-center">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-12 col-md-6">
-                            <p>Sitio oficial de la Agrupación Motera Águilas del Sur. En nuestro sitio podrás conocer nuestra historia, estar informado de próximos eventos ya sean propios o de otras organizaciones en las que participamos, y disfrutar de nuestras aventuras.</p>
+                            <p>Sitio oficial de la <strong>Agrupación Motera Águilas del Sur</strong>. En nuestro sitio podrás conocer nuestra historia, estar informado de próximos eventos ya sean propios o de otras organizaciones en las que participamos, y disfrutar de nuestras aventuras.</p>
                         </div>
                     </div>
 
@@ -40,43 +45,49 @@ function Home () {
                                 <p>Cada kilómetro recorrido es una página más en el libro de nuestras vidas, y en cada curva descubrimos la belleza de vivir en la carretera, donde la libertad se fusiona con el viento.</p>
                             </div>
                         </div>
+                    
                     <div className="row my-5 seccion-oscura">
                         <div className="col-12 text-center">
                             <h1>Galería</h1>
                             <p>Visita nuestra galería en el que podrás disfrutar de nuestras reuniones y aventuras.</p>
                         </div>
-                            <div className="col-12 col-md-6 my-3">
-                                <Carrouselhome/>
-                            <Link to="/galery" className="fire-text">
-                                <p className="mt-3">Ver más fotos</p>
-                            </Link>
-                        </div>
-                        <div className="col col-md-6">
-                            <div className="row">
-                                <div className="col-12">
-                                    Aqui va a ir un video
+                            
+                            <div className="row d-flex align-items-center my-3">
+                                <div className="col-12 col-md-6 order-2 order-md-1">
+                                    <p>Podrás ver la esencia de nuestra hermandad en cada fotografía, en el que capturó momentos llenos de risas, amistad, unión y pasión. Juntos, no solo recorremos kilómetros, sino que creamos recuerdos que durarán toda la vida.</p>
                                 </div>
-                                <div className="col-12">
-                                    Aqui va otro video
+                                <div className="col-12 col-md-6 my-3 order-1 order-md-2">
+                                    <Carrouselhome/>
+                                <Link to="/galery" className="fire-text">
+                                    <p className="mt-3">Ver más fotos</p>
+                                </Link>
                                 </div>
                             </div>
-                            <Link to="/galery" className="fire-text">
-                                <p className="mt-3">Ver más videos</p>
-                            </Link>
+                            
+                            <div className="row d-flex align-items-center">
+                                <div className="col-12 col-md-6 my-3">
+                                    <YouTube videoId={videoId} opts={{ width: '100%' }} />
+                                <Link to="/galery" className="fire-text">
+                                    <p className="mt-3">Ver más videos</p>
+                                </Link>
+                                </div>
+                                <div className="col-12 col-md-6">
+                                    <p>También te invitamos a que veas eventos en los que hemos participado, disfrutado y vivido al máximo, junto con nuestros integrantes y en ciertos momentos con agrupaciones amigas.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <hr />
-                    <div className="row my-5 justify-content-evenly">
-                    <div className="col-12 text-center">
-                            <h1>Sección Informativa</h1>
-                            <p>En éste apartado podrás estar actualizado de los próximos eventos para que puedas participar.</p>
-                        </div>
-                        <div className="col-12 col-md-6">
-                            <Carrouselhome2/>
+                        <hr />
+                        <div className="row my-5 justify-content-evenly">
+                        <div className="col-12 text-center">
+                                <h1>Sección Informativa</h1>
+                                <p>En éste apartado podrás estar actualizado de los próximos eventos para que puedas participar.</p>
+                            </div>
+                            <div className="col-12 col-md-6 my-5">
+                                <Carrouselhome2/>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             <ScrollTop/> 
         </div>
     )

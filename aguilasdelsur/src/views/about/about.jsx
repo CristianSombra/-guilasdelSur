@@ -23,7 +23,7 @@ function About () {
                         src={imgabout} className="img-fluid rounded" 
                         style={{ width: '800px', boxShadow: '0px 0px 10px 2px rgba(0, 0, 0, 0.3)' }}/>
                     <figcaption className="figure-caption text-center">
-                        <p className="mt-3">Ciudad de Ushuaia, provincia de Tierra del Fuego</p>
+                        <p className="mt-3">Tren fin del mundo, provincia de Tierra del Fuego</p>
                     </figcaption>
                 </div>
             <div className="row my-5 seccion-oscura d-flex justify-content-center align-items-center">
