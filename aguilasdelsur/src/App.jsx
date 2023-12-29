@@ -20,7 +20,7 @@ function App() {
   
   return (
     <div className="container-fluid background-container">
-      {location.pathname !== "/" && <NavBar />}
+      {location.pathname !== "/" && <NavBar /> }
       <div>
         <Routes>
           <Route exact path="/" element={<Landing />} />
@@ -30,7 +30,7 @@ function App() {
           <Route path="/contact"  element={<Contact />} />
         </Routes>
       </div>
-      <Footer/>
+      {location.pathname !== "/" && <Footer />}
     </div>
   );
 }

@@ -88,7 +88,7 @@ function Home () {
                         </div>
                     </div>
                 </div>
-            <ScrollTop/> 
+            <ScrollTop/>
         </div>
     )
 };
