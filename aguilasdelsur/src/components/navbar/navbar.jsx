@@ -30,8 +30,12 @@ function Navbar () {
                                 Galería
                                 </a>
                                 <ul className="dropdown-menu shadow-lg p-3 mb-3 dropdown-menu-dark bg-dark rounded" aria-labelledby="navbarDropdown">
-                                    <li><a className="dropdown-item" href="/galery" >Fotos</a></li>
-                                    <li><a className="dropdown-item" href="/galery" >Videos</a></li>
+                                    <Link to="/galery" className="text-decoration-none">
+                                        <li className="dropdown-item">Fotos</li>
+                                    </Link>
+                                    <Link to="/galery" className="text-decoration-none">
+                                    <li className="dropdown-item" >Videos</li>
+                                    </Link>
                                 </ul>
                             </li>
                             <li className="nav-item me-3">
