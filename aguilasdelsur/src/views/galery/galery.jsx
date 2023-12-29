@@ -27,22 +27,18 @@ function Galery () {
                             </div>
                             <div className="col-3">
                                 <p>En construcción</p>
-
-                            </div>
+                        </div>
                     </div>
                     <hr />
                     <div className="row my-5">
                             <div className="col-12 mb-3">
                                 <p>En construcción</p>
-
                             </div>
                             <div className="col-12 mb-3">
                                 <p>En construcción</p>
-
                             </div>
                             <div className="col-12 mb-3">
                                 <p>En construcción</p>
-
                             </div>
                         </div>
                     <hr />
