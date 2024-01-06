@@ -31,9 +31,9 @@ function Footer() {
                                     </a>
                                 </div>
                             </div>
-                            <p className="mt-5 mb-0 text-center">
-                                Creado con &hearts; por Cristian Sombra (2023) &copy;
-                            </p>
+                            <div className="mt-5 mb-0 text-center">
+                                Creado con &hearts; por Cristian Sombra (2024) &copy;
+                            </div>
                         </div>
                     </div>
                 </div>
