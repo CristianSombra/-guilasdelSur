@@ -1,0 +1,7 @@
+.container-marco {
+    background: url("../assets/celular.jpg") no-repeat;
+    background-size: cover;
+    display: flex;  /* Usar flexbox para alinear contenido verticalmente */
+    align-items: center;
+    margin-top: 0;
+}
