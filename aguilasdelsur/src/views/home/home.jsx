@@ -5,7 +5,7 @@ import img from "../../assets/home.png";
 import imgmoto from "../../assets/motoush.png";
 import ScrollTop from "../../components/scrollTop/scrollTop";
 import Carrouselhome from "../../components/carrousel/carrouselhome";
-import Carrouselhome2 from "../../components/carrousel/carroulelhome2";
+import Carrouselhome2 from "../../components/carrousel/carrouselhome2";
 import "../index.css";
 
 
