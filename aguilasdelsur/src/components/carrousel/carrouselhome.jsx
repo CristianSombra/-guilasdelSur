@@ -6,7 +6,6 @@ import img4 from "../../assets/carrouselhome4.png";
 
 
 function Carrouselhome () {
-
     return (
         <div className="container-fluid">
                     <div className="carousel slide carousel-fade" id="mi-carousel1" data-bs-ride="carousel">
