@@ -1,7 +1,36 @@
 .container-marco {
     background: url("../assets/celular.jpg") no-repeat;
     background-size: cover;
-    display: flex;  /* Usar flexbox para alinear contenido verticalmente */
-    align-items: center;
     margin-top: 0;
+}
+
+.galery1 .galeria .contenedor-imagen {
+	max-height: 280px;
+	overflow: hidden;
+}
+
+.galery1 .galeria .contenedor-imagen a {
+	background: rgb(96, 166, 207);
+	display: inline-block;
+}
+
+.galery1 .galeria .contenedor-imagen:hover img {
+	opacity: .3;
+}
+
+/* Ventana Modal */
+.modal-dialog {
+	max-width: 1000px;
+}
+
+/* Dispositivo lg */
+@media screen and (max-width: 992px){
+
+	.galery1 .galeria .contenedor-imagen:nth-child(1) {order: 1;}
+	.galery1 .galeria .contenedor-imagen:nth-child(2) {order: 3;}
+	.galery1 .galeria .contenedor-imagen:nth-child(3) {order: 6;}
+	.galery1 .galeria .contenedor-imagen:nth-child(4) {order: 2;}
+	.galery1 .galeria .contenedor-imagen:nth-child(5) {order: 5;}
+	.galery1 .galeria .contenedor-imagen:nth-child(6) {order: 4;}
+	.galery1 .galeria .contenedor-imagen:nth-child(7) {order: 7;}
 }
