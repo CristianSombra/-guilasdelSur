@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import img1 from "../../assets/galery1/img-1.png";
-import img2 from "../../assets/galery1/img-2.png";
-import img3 from "../../assets/galery1/img-3.png";
-import img4 from "../../assets/galery1/img-4.png";
-import img5 from "../../assets/galery1/img-5.png";
-import img6 from "../../assets/galery1/img-6.png";
-import img7 from "../../assets/galery1/img-7.png";
+const img1 = "https://res.cloudinary.com/minube2024/image/upload/v1705034509/aguilasdelsur/fotos/Galery1/img-1_mlm7lw.png";
+const img2 = "https://res.cloudinary.com/minube2024/image/upload/v1705034503/aguilasdelsur/fotos/Galery1/img-2_hdvzi9.png";
+const img3 = "https://res.cloudinary.com/minube2024/image/upload/v1705034504/aguilasdelsur/fotos/Galery1/img-3_ukrazp.png";
+const img4 = "https://res.cloudinary.com/minube2024/image/upload/v1705034516/aguilasdelsur/fotos/Galery1/img-4_noepdp.png";
+const img5 = "https://res.cloudinary.com/minube2024/image/upload/v1705034513/aguilasdelsur/fotos/Galery1/img-5_azektc.png";
+const img6 = "https://res.cloudinary.com/minube2024/image/upload/v1705034515/aguilasdelsur/fotos/Galery1/img-6_ugqgs0.png";
+const img7 = "https://res.cloudinary.com/minube2024/image/upload/v1705034519/aguilasdelsur/fotos/Galery1/img-7_ic8tyy.png";
 import "../index.css";
 
 function Galery1 () {

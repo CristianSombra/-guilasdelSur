@@ -10,8 +10,6 @@ import "../index.css";
 
 
 function Home () {
-    
-
     const videoId = "KaM62oqXgJU";
 
     return (
@@ -40,7 +38,7 @@ function Home () {
                                     <p className="mt-3">Ciudad de Ushuaia, provincia de Tierra del Fuego</p>
                                 </figcaption>
                             </div>
-                            <div className="col-12  col-md-6 mb-3">
+                            <div className="col-12 col-md-6 mb-3">
                                 <p>En la ruta, encontramos la verdadera riqueza de la vida, la libertad. Con nuestras motos como compañeras, exploramos caminos desconocidos y creando recuerdos inolvidables.</p>
                                 <p>Cada kilómetro recorrido es una página más en el libro de nuestras vidas, y en cada curva descubrimos la belleza de vivir en la carretera, donde la libertad se fusiona con el viento.</p>
                             </div>
@@ -66,7 +64,10 @@ function Home () {
                             
                             <div className="row d-flex align-items-center">
                                 <div className="col-12 col-md-6 my-3">
-                                    <YouTube videoId={videoId} opts={{ width: '100%' }} />
+                                    <YouTube 
+                                        videoId={videoId} 
+                                        opts={{ width: '100%' }} 
+                                    />
                                 <Link to="/galery" className="fire-text">
                                     <p className="mt-3">Ver más videos</p>
                                 </Link>
