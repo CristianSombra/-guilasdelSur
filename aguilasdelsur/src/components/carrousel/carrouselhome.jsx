@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../assets/carrouselhome1.png";
-import img2 from "../../assets/carrouselhome2.png";
-import img3 from "../../assets/carrouselhome3.png";
-import img4 from "../../assets/carrouselhome4.png";
+const img1 = "https://res.cloudinary.com/minube2024/image/upload/v1705034838/aguilasdelsur/fotos/Carrouselhome/carrouselhome1_zhlwd3.png";
+const img2 = "https://res.cloudinary.com/minube2024/image/upload/v1705034836/aguilasdelsur/fotos/Carrouselhome/carrouselhome2_gj9t0a.png";
+const img3 = "https://res.cloudinary.com/minube2024/image/upload/v1705034843/aguilasdelsur/fotos/Carrouselhome/carrouselhome3_h1egxu.png";
+const img4 = "https://res.cloudinary.com/minube2024/image/upload/v1705034838/aguilasdelsur/fotos/Carrouselhome/carrouselhome4_kgont3.png";
 
 
 function Carrouselhome () {
