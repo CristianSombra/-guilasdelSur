@@ -12,7 +12,9 @@ function Navbar () {
         <nav className="navbar navbar-expand-lg navbar-dark bg-black py-0">
             <div className="container-fluid">
                     <div className="navbar-brand">
-                        <img src={logo} alt="logo" width="160"/>
+                        <Link to="/home">
+                            <img src={logo} alt="logo" width="160"/>
+                        </Link>
                     </div>
                     <button className="navbar-toggler icon-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style={{ fontSize: '2em' }}>
                         <FontAwesomeIcon icon={faMotorcycle} />
@@ -34,12 +36,12 @@ function Navbar () {
                                         <li className="dropdown-item">Fotos</li>
                                     </Link>
                                     <Link to="/galery" className="text-decoration-none">
-                                    <li className="dropdown-item" >Videos</li>
+                                        <li className="dropdown-item" >Videos</li>
                                     </Link>
                                 </ul>
                             </li>
                             <li className="nav-item me-3">
-                            <Link to="/contact" className="nav-link active" aria-current="page" >Contáctanos</Link>
+                                <Link to="/contact" className="nav-link active" aria-current="page">Contáctanos</Link>
                             </li>
                         </ul>
                     </div> 

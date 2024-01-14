@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Carousel, Container } from "react-bootstrap";
+import img from "../../assets/imgcelular.png";
 import "../index.css";
 
 const videos = [
@@ -9,44 +10,73 @@ const videos = [
 
 const Gallery = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-
+    const [videoStarted, setVideoStarted] = useState(false);
+    
     const handleSlideChange = (selectedIndex, e) => {
-    // Pausar el video actual cuando cambias al siguiente
+      // Pausar el video actual cuando cambias al siguiente
     const currentVideo = document.getElementById(`video-${activeIndex}`);
-    if (currentVideo) {
-        currentVideo.pause();
-    }
+        if (currentVideo) {
+            currentVideo.pause();
+        }
 
-    setActiveIndex(selectedIndex);
-};
+        setActiveIndex(selectedIndex);
+        setVideoStarted(false);
+    };
 
-return (
-    <Container className="mt-5">
-        <div className="row d-flex justify-content-around">
-            <div className="col-12 col-md-4 container-marco d-flex justify-content-center">
-                <Carousel activeIndex={activeIndex} onSelect={handleSlideChange}>
-                    {videos.map((video, index) => (
-                    <Carousel.Item key={index}>
-                        <video
-                            id={`video-${index}`}
-                            controls
-                            className="w-100 my-5 rounded"
-                            style={{ maxWidth: '95%', maxHeight: '95%' }}
-                        >
-                            <source src={video} type="video/mp4" />
-                        </video>
-                    </Carousel.Item>
-                    ))}
-                </Carousel>
-            </div>
-            <div className="col-12 col-md-6 d-flex align-items-center">
-                <div className="row">
-                    <p>En la ruta, encontramos la verdadera riqueza de la vida, la libertad. Con nuestras motos como compañeras, exploramos caminos desconocidos y creando recuerdos inolvidables.</p>
-                    <p>Cada kilómetro recorrido es una página más en el libro de nuestras vidas, y en cada curva descubrimos la belleza de vivir en la carretera, donde la libertad se fusiona con el viento.</p>
+    const handleSlideClick = (index) => {
+      // Reproducir el video al hacer clic en cualquier parte de la diapositiva
+        if (index === activeIndex && !videoStarted) {
+            setVideoStarted(true);
+        }
+    };
+
+    return (
+        <Container className="mt-5">
+            <div className="row d-flex justify-content-around">
+                <div className="col-12 col-md-4 container-marco d-flex justify-content-center">
+                    <Carousel className="carousel-dark" activeIndex={activeIndex} onSelect={handleSlideChange}>
+                        {videos.map((video, index) => (
+                            <Carousel.Item
+                                key={index}
+                                onClick={() => handleSlideClick(index)}
+                                >
+                                {index === activeIndex && !videoStarted ? (
+                                <img
+                                    src={img}
+                                    alt="Muestra"
+                                    className="w-100 my-5 rounded"
+                                    style={{ maxWidth: "95%", maxHeight: "95%" }}
+                                />
+                                ) : (
+                                <video
+                                    id={`video-${index}`}
+                                    controls
+                                    className="w-100 my-5 rounded"
+                                    style={{ maxWidth: "95%", maxHeight: "95%" }}
+                                >
+                                <source src={video} type="video/mp4" />
+                                    </video>
+                                )}
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
+                </div>
+                    <div className="col-12 col-md-6 d-flex align-items-center">
+                        <div className="row">
+                            <p className="my-5">
+                                En Tierra del Fuego, disfrutamos de punta a punta de sus rutas
+                                desconocidas que serpentean entre paisajes majestuosos, montañas
+                                y ríos, creando recuerdos que se graban en el alma.
+                            </p>
+                        <p>
+                            Descubrimos la belleza de vivir en la carretera fueguina, donde
+                            las montañas esculpen el horizonte y la naturaleza salvaje de
+                            Tierra del Fuego nos envuelve en su abrazo inolvidable.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </Container>
+        </Container>
     );
 };
 
