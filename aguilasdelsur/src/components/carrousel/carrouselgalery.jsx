@@ -68,11 +68,11 @@ const Gallery = () => {
                                 desconocidas que serpentean entre paisajes majestuosos, montañas
                                 y ríos, creando recuerdos que se graban en el alma.
                             </p>
-                        <p>
-                            Descubrimos la belleza de vivir en la carretera fueguina, donde
-                            las montañas esculpen el horizonte y la naturaleza salvaje de
-                            Tierra del Fuego nos envuelve en su abrazo inolvidable.
-                        </p>
+                            <p>
+                                Descubrimos la belleza de vivir en la carretera fueguina, donde
+                                las montañas esculpen el horizonte y la naturaleza salvaje de
+                                Tierra del Fuego nos envuelve en su abrazo inolvidable.
+                            </p>
                     </div>
                 </div>
             </div>
