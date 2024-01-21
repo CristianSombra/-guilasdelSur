@@ -13,13 +13,13 @@ function Footer() {
                     <div className="row">
                         <div className="col">
                             <div className="row">
-                                <div className="col-12 d-flex justify-content-center text-center">
-                                    <p>¡Gracias por visitar nuestro sitio! Conéctate con nosotros en las redes sociales:</p>
+                                <div className="col-12 my-3 d-flex justify-content-center text-center">
+                                    <p>¡Gracias por visitar nuestra Web Oficial! Conéctate con nosotros en las redes sociales:</p>
                                 </div>
                                 <div className="col-12 text-center mb-3">
                                     <img src={imgfooter} className="img-fluid" alt="Ojos águila footer" />
                                 </div>
-                                <div className="col-12 d-flex justify-content-center text-center">
+                                <div className="col-12 my-3 d-flex justify-content-center text-center">
                                     <a href="https://web.facebook.com/profile.php?id=100072323361470" target="_blank" rel="noopener noreferrer">
                                         <img className="me-5" src={face} width="40"/>
                                     </a>
@@ -31,8 +31,8 @@ function Footer() {
                                     </a>
                                 </div>
                             </div>
-                            <div className="mt-5 mb-0 text-center">
-                                Creado con &hearts; por Cristian Sombra (2024) &copy;
+                            <div className="mt-3 mb-0 text-center">
+                                Creado con &hearts; por Cristian Sombra (2023) &copy;
                             </div>
                         </div>
                     </div>

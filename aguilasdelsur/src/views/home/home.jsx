@@ -46,7 +46,6 @@ function Home () {
                     
                     <div className="row my-5 seccion-oscura">
                         <div className="col-12 text-center">
-                            <h1>Galería</h1>
                             <p>Visita nuestra galería en el que podrás disfrutar de nuestras reuniones y aventuras.</p>
                         </div>
                             
@@ -56,9 +55,6 @@ function Home () {
                                 </div>
                                 <div className="col-12 col-md-6 my-3 order-1 order-md-2">
                                     <Carrouselhome/>
-                                <Link to="/galery" className="fire-text">
-                                    <p className="mt-3">Ver más fotos</p>
-                                </Link>
                                 </div>
                             </div>
                             
@@ -68,19 +64,19 @@ function Home () {
                                         videoId={videoId} 
                                         opts={{ width: '100%' }} 
                                     />
-                                    <Link to="/galery" className="fire-text">
-                                        <p className="mt-3">Ver más videos</p>
-                                    </Link>
                                 </div>
                                 <div className="col-12 col-md-6">
                                     <p>También te invitamos a que veas eventos en los que hemos participado, disfrutado y vivido al máximo, junto con nuestros integrantes y en ciertos momentos con agrupaciones amigas.</p>
                                 </div>
                             </div>
+                            <Link to="/galery" className="text-custom text-decoration-none">
+                                <p className="my-5">IR A GALERIA</p>
+                            </Link>
                         </div>
                         <hr />
                         <div className="row my-5 justify-content-evenly">
                         <div className="col-12 text-center">
-                                <h1>Sección Informativa</h1>
+                                <h1><strong>Sección Informativa</strong></h1>
                                 <p>En éste apartado podrás estar actualizado de los próximos eventos para que puedas participar.</p>
                             </div>
                             <div className="col-12 col-md-6 my-5">

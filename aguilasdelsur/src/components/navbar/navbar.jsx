@@ -19,28 +19,18 @@ function Navbar () {
                     <button className="navbar-toggler icon-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style={{ fontSize: '2em' }}>
                         <FontAwesomeIcon icon={faMotorcycle} />
                     </button>
-                    <div className= "collapse navbar-collapse navbar-custom"  id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto">
-                        <li className="nav-item me-3">
+                    <div className= "collapse navbar-collapse navbar-custom justify-content-center text-center"  id="navbarSupportedContent">
+                        <ul className="navbar-nav ms-auto ">
+                        <li className="nav-item nav-item-custom">
                             <Link to="/home" className="nav-link active" aria-current="page">Inicio</Link>
                         </li>
-                        <li className="nav-item me-3">
+                        <li className="nav-item nav-item-custom">
                             <Link to="/about" className="nav-link active" aria-current="page">Nosotros</Link>
                         </li>
-                            <li className="nav-item dropdown me-3">
-                                <a className="nav-link dropdown-toggle active" href="galeria" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Galería
-                                </a>
-                                <ul className="dropdown-menu shadow-lg p-3 mb-3 dropdown-menu-dark bg-dark rounded" aria-labelledby="navbarDropdown">
-                                    <Link to="/galery" className="text-decoration-none">
-                                        <li className="dropdown-item">Fotos</li>
-                                    </Link>
-                                    <Link to="/galery" className="text-decoration-none">
-                                        <li className="dropdown-item" >Videos</li>
-                                    </Link>
-                                </ul>
-                            </li>
-                            <li className="nav-item me-3">
+                        <li className="nav-item nav-item-custom">
+                            <Link to="/galery" className="nav-link active" aria-current="page">Galeria</Link>
+                        </li>
+                            <li className="nav-item nav-item-custom">
                                 <Link to="/contact" className="nav-link active" aria-current="page">Contáctanos</Link>
                             </li>
                         </ul>
