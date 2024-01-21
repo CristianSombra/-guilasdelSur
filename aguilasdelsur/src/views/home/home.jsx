@@ -46,7 +46,7 @@ function Home () {
                     
                     <div className="row my-5 seccion-oscura">
                         <div className="col-12 text-center">
-                            <p>Visita nuestra galería en el que podrás disfrutar de nuestras reuniones y aventuras.</p>
+                            <p><strong>Visita nuestra galería en el que podrás disfrutar de nuestras reuniones y aventuras.</strong></p>
                         </div>
                             
                             <div className="row d-flex align-items-center my-3">
