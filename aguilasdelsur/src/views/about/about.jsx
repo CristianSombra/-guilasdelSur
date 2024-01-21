@@ -11,7 +11,7 @@ function About () {
         <div className="container-fluid">
             <div className="row my-5 d-flex justify-content-center">
                 <div className="col-12 text-center mt-3">
-                    <h2>"LA LIBERTAD ES EL PRIVILEGIO MÁS GRANDE DE TODO SER VIVO"</h2>    
+                    <h1><strong>"La libertad es el privilegio más grande de todo ser vivo"</strong></h1>    
                 </div>    
             </div>
             <div className="row my-5 d-flex justify-content-center align-items-center">
@@ -38,7 +38,7 @@ function About () {
             </div>
             <div className="row my-3 d-flex justify-content-center">
                 <div className="col-12 text-center mt-3">
-                    <h2>"DEJEMOS HUELLAS SIN PISAR A NADIE"</h2>    
+                    <h1><strong>"Dejemos huellas sin pisar a nadie"</strong></h1>    
                 </div>    
             </div>
             <div className="row my-3 d-flex justify-content-center align-items-center">
@@ -51,7 +51,7 @@ function About () {
                         style={{ width: '700px' }}/>
                 </div>
             </div>
-            <div className="row my-3 d-flex justify-content-center align-items-center">
+            <div className="row mt-3 mb-5 d-flex justify-content-center align-items-center">
                 <div className="col-12">
                     <p style={{ textAlign: 'justify' }}>En su centro representada por <strong>El Águila</strong>, considerado el emblema supremo de los dioses, símbolo de majestuosidad, valentía e inspiración espiritual.</p>
                     <p style={{ textAlign: 'justify' }}><strong>La brújula y las montañas</strong> representa la libertad de espíritu y el mundo como hogar, ya que además del Norte también está el Sur, representada en este caso por las montañas del fin del mundo, el Este y el Oeste, lo cual muestra el sinfín de direcciones a elegir y los destinos de la vida.</p>
@@ -64,7 +64,7 @@ function About () {
                 <div className="col-12 text-center">
                     <p>Puedes conocer más sobre nuestra historia, conocer a los integrantes, y porque no, tu puedes ser parte también. A continuación nuestro estatuto:</p>
                 </div>
-                <div className="col-12 text-center mt-3">
+                <div className="col-12 text-center mt-5">
                     <a href={pdf} target="_blank">
                         <i className="bi bi-file-earmark-text-fill fs-1"></i>
                     </a>

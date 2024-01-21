@@ -8,14 +8,20 @@
 .fire-text h1 {
     font-size: 3em;
     animation: flame 1s infinite alternate;
-    color: #ff5722; /* Puedes ajustar el color base aquí */
-    text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+    color: #ff5722;
+    text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722;
 }
 
-.fire-text {
+.text-custom p {
+  font-size: 1.8em;
+  text-decoration: none !important;
+  color: white;
+}
+
+.text-custom p:hover {
   animation: flame 1s infinite alternate;
-  color: #ff5722; /* Puedes ajustar el color base aquí */
-  text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722; /* Sombra */
+  color: #ff5722;
+  text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722;
 }
 
 .mi-formulario{

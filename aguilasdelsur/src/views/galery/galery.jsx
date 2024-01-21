@@ -12,7 +12,7 @@ function Galery () {
         <div className="container-fluid">
                 <div className="row mt-5 d-flex justify-content-center">
                     <div className="col-12 text-center mt-3">
-                        <h1>Nuestras Aventuras</h1>    
+                        <h1><strong>Nuestras Aventuras</strong></h1>    
                     </div>    
                 </div>
             <div className="row justify-content-center">
