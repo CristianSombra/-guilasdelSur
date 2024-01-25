@@ -19,7 +19,7 @@ function Galery1 () {
         <div className="container">
 			<div className="row galery1 g-0 px-4 mb-5">
 				<div className="col">
-					<h5 className="mb-5">Haz click en la foto que quieras disfrutar.</h5>
+					<h5 className="mb-5"><strong>Haz click</strong> en la foto que quieras disfrutar.</h5>
 					<div className="row galeria">
 						<div className="contenedor-imagen mb-4 col-6 col-lg-4">
 							<a data-bs-toggle="modal" data-bs-target="#modal-galeria" onClick={() => handleImageClick(img1)}>
