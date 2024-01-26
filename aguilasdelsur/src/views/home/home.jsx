@@ -28,7 +28,6 @@ function Home () {
                         </div>
                     </div>
 
-                    <hr />
                     <div className="row my-5 d-flex justify-content-center align-items-center">
                             <div className="col-12 col-md-6 mb-3">
                                 <img 
@@ -73,7 +72,7 @@ function Home () {
                                 <p className="my-5">IR A GALERIA</p>
                             </Link>
                         </div>
-                        <hr />
+
                         <div className="row my-5 justify-content-evenly">
                         <div className="col-12 text-center">
                                 <h1><strong>Sección Informativa</strong></h1>
