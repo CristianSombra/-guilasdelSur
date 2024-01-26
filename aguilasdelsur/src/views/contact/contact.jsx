@@ -2,15 +2,21 @@ import React, { useState, useEffect } from "react";
 import emailjs from 'emailjs-com';
 import ScrollTop from "../../components/scrollTop/scrollTop";
 import imgcontact from "../../assets/contact.png";
+import AlertMessage from "./alertMessage";
 import "../index.css";
 
 function Contact () {
-    const [showModal, setShowModal] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        message: ''
+        message: '',
+        isValidEmail: false
     });
+
+    const [isFormValid, setIsFormValid] = useState(false);
+    const [alertMessage, setAlertMessage] = useState(null);
+    const [isAlertVisible, setIsAlertVisible] = useState(false);
+
 
     useEffect(() => {
         emailjs.init('k6BIbgQ5_xVbN60fY');
@@ -19,7 +25,6 @@ function Contact () {
     const handleChange = (e) => {
         const { id, value } = e.target;
     
-        // Validation for name field (only letters and max 20 characters)
         if (id === "name") {
             const regex = /^[a-zA-Z\s]+$/;
             if (value.length <= 20 && regex.test(value)) {
@@ -27,26 +32,30 @@ function Contact () {
             }
         }
     
-        // Validation for email field
         if (id === "email") {
-            // You can use a regular expression for basic email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
             setFormData((prevData) => ({
                 ...prevData,
                 [id]: value,
                 isValidEmail: emailRegex.test(value),
             }));
         }
-    
-        // For other fields, update the state directly
+
         if (id !== "name" && id !== "email") {
             setFormData((prevData) => ({ ...prevData, [id]: value }));
         }
+
+        setFormData((prevData) => {
+            setIsFormValid(
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(prevData.email) &&
+                prevData.name.length > 0 &&
+                prevData.message.length > 0
+            );
+            return prevData;
+        });
     };
     
     
-    
-
     const handleSubmit = async (event) => {
         event.preventDefault();
 
@@ -55,7 +64,6 @@ function Contact () {
 
         const serviceID = 'default_service';
         const templateID = 'template_40mcgip';
-
         const data = {
             name: formData.name,
             email: formData.email,
@@ -64,23 +72,26 @@ function Contact () {
 
         try {
             await emailjs.send(serviceID, templateID, data);
+            setAlertMessage({ message: "Correo Enviado! Te responderemos a la brevedad.", type: "success" });
+            setIsAlertVisible(true);
             btn.value = 'Send Email';
-            setShowModal(true);
             setFormData({
                 name: '',
                 email: '',
-                message: ''
+                message: '',
+                isValidEmail: false
             });
         } catch (err) {
+            setAlertMessage({ message: "Ocurrió un error al enviar el correo. Por favor, inténtalo de nuevo más tarde.", type: "error" });
+            setIsAlertVisible(true);
             btn.value = 'Send Email';
-            alert(JSON.stringify(err));
+            setFormData((prevData) => ({ ...prevData, isValidEmail: false }));
         }
+        setTimeout(() => {
+            setIsAlertVisible(false);
+        }, 3000);
     };
     
-    const closeModal = () => {
-        setShowModal(false);
-    };
-
     return (
         <div className="container">
                 <div className="row mt-5">
@@ -138,27 +149,20 @@ function Contact () {
                                 </textarea>
                             </div>
                             <div className="d-flex justify-content-end">
-                                <button type="submit" className="btn btn-outline-light" id="button" data-bs-toggle="modal" data-bs-target="#modalForm">Enviar</button>
+                                <button 
+                                    type="submit" 
+                                    className="btn btn-outline-light" 
+                                    id="button" 
+                                    disabled={!isFormValid}>
+                                        Enviar
+                                </button>
+
                             </div>
                         </form> 
                     </div>
-                        <div>
-                            <div className="modal fade" id="modalForm" tabIndex="-1" style={{ display: showModal ? 'block' : 'none' }}>
-                                <div className="modal-dialog modal-dialog-centered" style={{ maxWidth: '450px' }}>
-                                    <div className="modal-content bg-dark">
-                                        <div className="modal-header text-light">
-                                            <h2>Aguilas del Sur</h2>
-                                            <button type="button" className="btn-close btn-light bg-light" data-bs-dismiss="modal" aria-label="Close" onClick={closeModal}></button>
-                                        </div>
-                                        <div className="modal-body text-light text-center">
-                                            <h5>Gracias por tu mensaje, te responderemos a la brevedad.</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                 </div>
-                <ScrollTop />
+                {isAlertVisible && alertMessage && <AlertMessage message={alertMessage.message} type={alertMessage.type} />}
+            <ScrollTop />
         </div>
     );
 }
